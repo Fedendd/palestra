@@ -871,7 +871,7 @@ setInterval(() => {
     if (idx !== UI.circ.lastIdx) {
       UI.circ.lastIdx = idx;
       beep(); if (navigator.vibrate) navigator.vibrate(200);
-      if (st.finished) UI.circ.running = false;
+      if (st.finished) { UI.circ.running = false; UI.circ.acc = st.total * 1000; }
       if (location.hash === '#/mobilita') rerender();
     } else {
       const t = document.getElementById('circ-time');
