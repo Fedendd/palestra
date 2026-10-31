@@ -1,0 +1,424 @@
+{
+  "leg-extension": {
+    "muscles": "Quadricipiti",
+    "setup": [
+      "Regola lo schienale: il ginocchio deve essere allineato al perno di rotazione della macchina (di solito segnato con un bollino).",
+      "Il rullo va appoggiato sopra la caviglia, non sul collo del piede.",
+      "Tieni le maniglie laterali e il bacino ben seduto."
+    ],
+    "errors": [
+      { "t": "Slanciare il peso", "f": "Sali in 1–2″, fermati un attimo in alto, scendi in 2–3″." },
+      { "t": "Sedere che si alza", "f": "Tira le maniglie verso il basso e riduci il carico." },
+      { "t": "Ginocchio non allineato al perno", "f": "Sposta lo schienale: se è sbagliato il ginocchio lavora male." }
+    ],
+    "joint": { "label": "Fastidio alle ginocchia", "tips": [
+      "Controlla l'allineamento ginocchio–perno: è la causa più frequente.",
+      "Riduci l'ampiezza: parti da ginocchio a circa 90°, non più piegato.",
+      "Abbassa il carico e rallenta la discesa."
+    ] },
+    "cue": [ "Contrai forte in alto per 1″ prima di scendere.", "Punte dei piedi leggermente verso di te." ],
+    "alt": [ "Leg extension monolaterale (una gamba alla volta) se l'altra è occupata.", "Squat goblet lento, 2×12–15.", "Affondi statici con manubri." ]
+  },
+  "pressa-inclinata": {
+    "muscles": "Quadricipiti, glutei",
+    "setup": [
+      "Regola lo schienale: in basso le ginocchia devono arrivare a circa 90°.",
+      "Piedi al centro della pedana, larghezza spalle, punte leggermente in fuori.",
+      "Spingi la pedana e sblocca le sicure prima di iniziare.",
+      "A fine serie riaggancia le sicure prima di togliere i piedi."
+    ],
+    "errors": [
+      { "t": "Bacino che si solleva in basso", "f": "Scendi troppo: accorcia il movimento e tieni la schiena incollata." },
+      { "t": "Ginocchia che cedono verso l'interno", "f": "Spingi le ginocchia in fuori, in linea con le punte." },
+      { "t": "Ginocchia bloccate in alto", "f": "Lascia un filo di piega: protegge l'articolazione." },
+      { "t": "Talloni che si staccano", "f": "Sposta i piedi più in alto sulla pedana." }
+    ],
+    "joint": { "label": "Fastidio a ginocchia o schiena", "tips": [
+      "Ginocchia: alza un po' i piedi sulla pedana e tieni le ginocchia in linea con le punte.",
+      "Schiena: fermati quando il bacino inizia a sollevarsi dallo schienale.",
+      "Non bloccare le ginocchia in alto."
+    ] },
+    "cue": [ "Spingi con tutto il piede, soprattutto col tallone.", "Discesa controllata in 2–3″." ],
+    "alt": [ "Leg press orizzontale, stessa logica di serie e carichi.", "Hack squat o squat al multipower: 3×6 pesante + 2×12–15 back-off.", "Anticipa l'esercizio successivo e torna alla pressa dopo." ]
+  },
+  "squat-goblet": {
+    "muscles": "Quadricipiti, glutei, core",
+    "setup": [
+      "Tieni il kettlebell per le corna, appoggiato al petto, gomiti sotto.",
+      "Piedi poco più larghi delle spalle, punte leggermente in fuori.",
+      "Scendi tra le ginocchia tenendo il petto alto."
+    ],
+    "errors": [
+      { "t": "Busto che crolla in avanti", "f": "Kettlebell incollato al petto, sguardo avanti." },
+      { "t": "Talloni che si alzano", "f": "Peso su tutto il piede; se serve, piedi un po' più larghi." },
+      { "t": "Ginocchia verso l'interno", "f": "Spingile in fuori, in linea con le punte." }
+    ],
+    "joint": { "label": "Fastidio a ginocchia o schiena", "tips": [
+      "Scendi solo fin dove mantieni la schiena neutra.",
+      "Allarga leggermente i piedi e apri le punte.",
+      "Usa un kettlebell più leggero: conta il totale, non il carico."
+    ] },
+    "cue": [ "Dividi le 50 rip in blocchi che riesci a fare puliti (es. 15-12-10-8-5).", "Recuperi brevi tra i blocchi: l'obiettivo è il tempo." ],
+    "alt": [ "Squat con manubrio tenuto verticale al petto.", "Leg press leggera, 50 rip totali." ]
+  },
+  "chest-press": {
+    "muscles": "Pettorali, tricipiti, deltoidi anteriori",
+    "setup": [
+      "Regola il sedile: le maniglie devono trovarsi all'altezza del centro del petto.",
+      "Schiena appoggiata, scapole indietro e in basso.",
+      "Se c'è la pedana o leva di pre-allungamento, usala per portare le maniglie in posizione di partenza."
+    ],
+    "errors": [
+      { "t": "Spalle che salgono verso le orecchie", "f": "Tieni le scapole basse e il petto aperto." },
+      { "t": "Gomiti troppo larghi", "f": "Gomiti a circa 45° dal busto, non a 90°." },
+      { "t": "Gomiti bloccati in avanti", "f": "Fermati un attimo prima della distensione completa." }
+    ],
+    "joint": { "label": "Fastidio alla spalla", "tips": [
+      "Alza o abbassa il sedile: le maniglie devono essere a metà petto, non all'altezza delle spalle.",
+      "Usa l'impugnatura neutra se la macchina la prevede.",
+      "Non portare i gomiti troppo indietro nella fase di ritorno."
+    ] },
+    "cue": [ "Pensa a stringere i pettorali, non a spingere con le mani.", "Ritorno lento in 2–3″." ],
+    "alt": [ "Panca piana con manubri, 2×12–15.", "Croci ai cavi o pectoral machine.", "Piegamenti sulle braccia." ]
+  },
+  "panca-manubri": {
+    "muscles": "Pettorali, tricipiti, deltoidi anteriori",
+    "setup": [
+      "Siediti con i manubri sulle cosce, sdraiati portandoli al petto con le ginocchia.",
+      "Scapole strette e basse, piedi a terra, leggero arco naturale.",
+      "Manubri sopra il petto, gomiti a circa 45° dal busto."
+    ],
+    "errors": [
+      { "t": "Gomiti aperti a 90°", "f": "Stringili a circa 45°: più forza e spalle più protette." },
+      { "t": "Discesa incompleta", "f": "Scendi finché i manubri arrivano all'altezza del petto." },
+      { "t": "Glutei che si alzano", "f": "Resta seduto sulla panca, spingi con i piedi a terra." }
+    ],
+    "joint": { "label": "Fastidio alla spalla", "tips": [
+      "Ruota leggermente i manubri verso l'impugnatura neutra.",
+      "Non scendere oltre la linea del petto.",
+      "Tieni le scapole strette per tutta la serie."
+    ] },
+    "cue": [ "Sulle serie pesanti chiedi a qualcuno di assisterti.", "Spingi i manubri leggermente verso l'interno in salita." ],
+    "alt": [ "Chest press Technogym: 3×6 pesante + 2×12–15 back-off.", "Panca piana con bilanciere al multipower." ]
+  },
+  "spinte-manubri": {
+    "muscles": "Deltoidi, tricipiti",
+    "setup": [
+      "In piedi o seduto con schienale, manubri all'altezza delle spalle.",
+      "Addominali contratti, glutei stretti (se in piedi).",
+      "Spingi verso l'alto avvicinando i manubri senza farli toccare."
+    ],
+    "errors": [
+      { "t": "Inarcare la schiena", "f": "Addominali contratti; se succede, fallo seduto con schienale." },
+      { "t": "Scendere troppo poco", "f": "Porta i manubri almeno all'altezza delle orecchie." },
+      { "t": "Gomiti troppo larghi", "f": "Tienili leggermente in avanti rispetto al busto." }
+    ],
+    "joint": { "label": "Fastidio alla spalla", "tips": [
+      "Usa l'impugnatura neutra (palmi uno verso l'altro).",
+      "Fallo seduto su panca a 80–90°.",
+      "Riduci il carico: conta arrivare a 50 in fretta, non il peso."
+    ] },
+    "cue": [ "Blocchi puliti, recuperi brevi.", "Non bloccare i gomiti in alto." ],
+    "alt": [ "Shoulder press Technogym, 50 rip totali.", "Spinte con un manubrio alla volta." ]
+  },
+  "alzate-laterali": {
+    "muscles": "Deltoidi laterali",
+    "setup": [
+      "In piedi, manubri lungo i fianchi, gomiti leggermente piegati.",
+      "Busto appena inclinato in avanti.",
+      "Alza fino all'altezza delle spalle, non oltre."
+    ],
+    "errors": [
+      { "t": "Slanciare con il busto", "f": "Usa un peso che sollevi senza dondolare." },
+      { "t": "Spalle che salgono", "f": "Pensa a spingere i manubri in fuori, non in alto." },
+      { "t": "Polsi più alti dei gomiti", "f": "Gomiti guidano il movimento, polsi allo stesso livello o più bassi." }
+    ],
+    "joint": { "label": "Fastidio alla spalla", "tips": [
+      "Alza leggermente in avanti (circa 30°), non perfettamente di lato.",
+      "Fermati all'altezza delle spalle.",
+      "Pollici in posizione neutra, non ruotati verso il basso."
+    ] },
+    "cue": [ "Drop set: finita l'ultima serie prendi subito manubri del 20% più leggeri.", "Discesa lenta, 2–3″." ],
+    "alt": [ "Alzate laterali al cavo basso, un braccio alla volta.", "Lateral raise machine se disponibile." ]
+  },
+  "tricipiti-corda": {
+    "muscles": "Tricipiti",
+    "setup": [
+      "Carrucola in alto, corda agganciata.",
+      "Gomiti stretti ai fianchi, busto leggermente in avanti.",
+      "Spingi in basso e apri la corda alla fine del movimento."
+    ],
+    "errors": [
+      { "t": "Gomiti che si muovono", "f": "Restano fermi ai fianchi: si muove solo l'avambraccio." },
+      { "t": "Usare il peso del corpo", "f": "Busto fermo, riduci il carico." },
+      { "t": "Movimento corto", "f": "Arriva a braccia distese e apri la corda." }
+    ],
+    "joint": { "label": "Fastidio al gomito", "tips": [
+      "Riduci il carico e rallenta.",
+      "Non bloccare violentemente i gomiti in basso.",
+      "Prova la barra dritta o a V al posto della corda."
+    ] },
+    "cue": [ "Contrai 1″ in basso aprendo la corda.", "Drop set: sposta subito il perno del 20% più leggero." ],
+    "alt": [ "Push down con barra al cavo.", "French press con manubrio." ]
+  },
+  "trazioni-australian": {
+    "muscles": "Dorsali, romboidi, bicipiti",
+    "setup": [
+      "Regola gli anelli più o meno all'altezza della vita.",
+      "Corpo dritto dai talloni alle spalle, braccia distese sotto gli anelli.",
+      "Più i piedi sono avanti, più è difficile."
+    ],
+    "errors": [
+      { "t": "Bacino che cede", "f": "Glutei e addominali contratti, corpo una tavola." },
+      { "t": "Tirare con le braccia", "f": "Avvia il movimento stringendo le scapole." },
+      { "t": "Non fare la pausa", "f": "La scheda chiede 2″ in alto su ogni rip." }
+    ],
+    "joint": { "label": "Fastidio a spalle o gomiti", "tips": [
+      "Ruota gli anelli durante la salita (palmi verso di te in alto).",
+      "Rendi l'esercizio più facile portando i piedi indietro.",
+      "Non tirare il mento in avanti: petto verso gli anelli."
+    ] },
+    "cue": [ "Petto agli anelli, tieni 2″, scendi controllato.", "Registra le ripetizioni: è il tuo progresso." ],
+    "alt": [ "Rematore al TRX.", "Rematore alla sbarra del multipower." ]
+  },
+  "lat-machine": {
+    "muscles": "Dorsali, bicipiti",
+    "setup": [
+      "Regola il cuscino delle cosce: ti deve bloccare bene senza schiacciare.",
+      "Presa prona poco più larga delle spalle.",
+      "Busto leggermente inclinato indietro, petto alto."
+    ],
+    "errors": [
+      { "t": "Tirare dietro la nuca", "f": "La scheda dice presa avanti: porta la barra al petto alto." },
+      { "t": "Dondolare con il busto", "f": "Busto fermo; se dondoli il carico è troppo alto (sulle pesanti va bene un minimo)." },
+      { "t": "Risalita incontrollata", "f": "Accompagna la barra su in 2″, braccia quasi distese." }
+    ],
+    "joint": { "label": "Fastidio alla spalla", "tips": [
+      "Stringi un po' la presa.",
+      "Non portare la barra sotto il mento con le spalle in avanti.",
+      "Abbassa le scapole prima di piegare le braccia."
+    ] },
+    "cue": [ "Pensa a portare i gomiti verso le tasche.", "Petto verso la barra." ],
+    "alt": [ "Pulldown con presa neutra.", "Trazioni assistite: 3×6 + 2×12–15." ]
+  },
+  "row-machine": {
+    "muscles": "Dorso centrale, dorsali, bicipiti",
+    "setup": [
+      "Regola il sedile: le maniglie all'altezza della parte bassa del petto.",
+      "Petto appoggiato al cuscino (se presente), piedi stabili.",
+      "Tira portando i gomiti indietro vicino al corpo."
+    ],
+    "errors": [
+      { "t": "Staccare il petto dal cuscino", "f": "Il busto resta fermo: tirano solo braccia e scapole." },
+      { "t": "Spalle che salgono", "f": "Scapole indietro e in basso a fine movimento." },
+      { "t": "Movimento corto", "f": "Lascia allungare il dorso in avanti a ogni ripetizione." }
+    ],
+    "joint": { "label": "Fastidio a spalle o lombare", "tips": [
+      "Abbassa il sedile se tiri verso il collo.",
+      "Mantieni la schiena neutra, non arrotondata.",
+      "Riduci il carico e rallenta."
+    ] },
+    "cue": [ "Stringi le scapole 1″ a fine tirata.", "Drop set: sposta il perno del 20% e continua subito." ],
+    "alt": [ "Pulley basso (seated cable row).", "Rematore con manubrio su panca." ]
+  },
+  "aperture-y-trx": {
+    "muscles": "Deltoidi posteriori, trapezio medio e basso",
+    "setup": [
+      "Cinghie del TRX corte, impugnature davanti al petto.",
+      "Corpo inclinato indietro, dritto come una tavola.",
+      "Apri le braccia formando una Y sopra la testa."
+    ],
+    "errors": [
+      { "t": "Piegare le braccia", "f": "Braccia quasi distese per tutto il movimento." },
+      { "t": "Bacino che cede", "f": "Glutei e addominali contratti." },
+      { "t": "Inclinazione troppo difficile", "f": "Fai un passo indietro per renderlo più facile." }
+    ],
+    "joint": { "label": "Fastidio alla spalla", "tips": [
+      "Riduci l'inclinazione (piedi più indietro).",
+      "Apri meno: Y più stretta.",
+      "Pollici verso l'alto."
+    ] },
+    "cue": [ "Pensa a portare le scapole verso le tasche dietro.", "Guarda il video del coach." ],
+    "alt": [ "Alzate a Y su panca inclinata con manubri leggeri.", "Face pull al cavo." ]
+  },
+  "superset-legcurl-stacchi": {
+    "muscles": "Femorali, glutei",
+    "setup": [
+      "Leg curl: allinea il ginocchio al perno della macchina, rullo sopra il tallone.",
+      "Stacchi rumeni: manubri davanti alle cosce, ginocchia appena piegate.",
+      "Fai il leg curl e passa subito agli stacchi: prepara i manubri vicino alla macchina."
+    ],
+    "errors": [
+      { "t": "Leg curl: bacino che si alza", "f": "Tieni le anche giù, riduci il carico." },
+      { "t": "Stacchi: schiena arrotondata", "f": "Spingi il sedere indietro, schiena dritta, manubri vicino alle gambe." },
+      { "t": "Stacchi: piegare troppo le ginocchia", "f": "Non è uno squat: il movimento è di anca." }
+    ],
+    "joint": { "label": "Fastidio alla zona lombare", "tips": [
+      "Negli stacchi scendi solo fin dove la schiena resta dritta (di solito sotto il ginocchio).",
+      "Manubri attaccati alle gambe per tutto il movimento.",
+      "Riduci il carico degli stacchi."
+    ] },
+    "cue": [ "Negli stacchi pensa a chiudere una porta col sedere.", "Senti tirare dietro le cosce: è giusto." ],
+    "alt": [ "Leg curl da seduto o sdraiato, quello libero.", "Stacchi rumeni con bilanciere." ]
+  },
+  "bicipiti-ez": {
+    "muscles": "Bicipiti",
+    "setup": [
+      "In piedi, presa sulla parte inclinata del bilanciere EZ, larghezza spalle.",
+      "Gomiti vicini ai fianchi.",
+      "Sali fino a contrarre, scendi fino a braccia quasi distese."
+    ],
+    "errors": [
+      { "t": "Slanciare con la schiena", "f": "Busto fermo; sulle pesanti un minimo va bene, mai strattoni." },
+      { "t": "Gomiti che vanno avanti", "f": "Restano ai fianchi." },
+      { "t": "Discesa veloce", "f": "Scendi in 2–3″." }
+    ],
+    "joint": { "label": "Fastidio a polsi o gomiti", "tips": [
+      "Prova la presa sulla parte più inclinata.",
+      "Riduci il carico e scendi senza bloccare i gomiti.",
+      "Alternativa: manubri con presa a martello."
+    ] },
+    "cue": [ "Stringi forte in alto 1″.", "Back-off: −15/20% e vai a cedimento." ],
+    "alt": [ "Curl al cavo basso con barra.", "Curl con manubri in piedi." ]
+  },
+  "affondi": {
+    "muscles": "Quadricipiti, glutei",
+    "setup": [
+      "Manubri lungo i fianchi, busto dritto.",
+      "Passo lungo: in basso entrambe le ginocchia a circa 90°.",
+      "Spingi con il tallone davanti e avanza con l'altra gamba."
+    ],
+    "errors": [
+      { "t": "Passo troppo corto", "f": "Il ginocchio davanti va troppo avanti: allunga il passo." },
+      { "t": "Ginocchio che cede all'interno", "f": "Tienilo in linea con la punta." },
+      { "t": "Busto inclinato", "f": "Petto alto, sguardo avanti." }
+    ],
+    "joint": { "label": "Fastidio alle ginocchia", "tips": [
+      "Allunga il passo.",
+      "Il ginocchio dietro sfiora appena il pavimento, non sbatterlo.",
+      "Fai affondi indietro sul posto: sono più gentili per il ginocchio."
+    ] },
+    "cue": [ "60 rip totali = 30 per gamba, conta ogni passo.", "Blocchi puliti, recuperi brevi." ],
+    "alt": [ "Affondi indietro sul posto.", "Bulgarian split squat." ]
+  },
+  "trazioni-assistite": {
+    "muscles": "Dorsali, bicipiti",
+    "setup": [
+      "Elastico agganciato alla sbarra, piede o ginocchio dentro l'elastico.",
+      "Presa supina (palmi verso di te), larghezza spalle.",
+      "Sali fino a portare il mento sopra la sbarra, tieni 2″."
+    ],
+    "errors": [
+      { "t": "Mezze ripetizioni", "f": "Parti da braccia distese ogni volta." },
+      { "t": "Dondolare", "f": "Gambe ferme, addominali contratti." },
+      { "t": "Saltare la pausa", "f": "2″ in alto su ogni rip." }
+    ],
+    "joint": { "label": "Fastidio a gomiti o spalle", "tips": [
+      "Usa un elastico più forte.",
+      "Prova la presa neutra se c'è.",
+      "Scendi controllato, non lasciarti cadere."
+    ] },
+    "cue": [ "Prima serie: quante ne fai al massimo. Poi 3 serie della metà.", "Gomiti verso le tasche." ],
+    "alt": [ "Trazioni alla macchina assistita (con contrappeso) se c'è.", "Lat machine presa supina." ]
+  },
+  "rematore-manubrio": {
+    "muscles": "Dorsali, dorso centrale, bicipiti",
+    "setup": [
+      "Mano e ginocchio dello stesso lato sulla panca, schiena parallela al pavimento.",
+      "Manubrio con braccio disteso sotto la spalla.",
+      "Tira verso l'anca portando il gomito indietro."
+    ],
+    "errors": [
+      { "t": "Ruotare il busto", "f": "Spalle parallele al pavimento per tutta la serie." },
+      { "t": "Tirare verso il petto", "f": "Il manubrio va verso l'anca." },
+      { "t": "Schiena arrotondata", "f": "Petto aperto, schiena piatta." }
+    ],
+    "joint": { "label": "Fastidio alla zona lombare", "tips": [
+      "Appoggia bene mano e ginocchio sulla panca.",
+      "Contrai gli addominali.",
+      "Non strattonare nemmeno con carichi alti."
+    ] },
+    "cue": [ "BELLE CARICHE: 6 rip pesanti ma pulite.", "Stringi la scapola in alto 1″." ],
+    "alt": [ "Row machine Technogym monolaterale.", "Pulley basso con maniglia singola." ]
+  },
+  "shoulder-press": {
+    "muscles": "Deltoidi, tricipiti",
+    "setup": [
+      "Regola il sedile: le maniglie devono trovarsi all'altezza delle spalle.",
+      "Schiena e testa appoggiate allo schienale, piedi a terra.",
+      "Spingi verso l'alto senza bloccare i gomiti."
+    ],
+    "errors": [
+      { "t": "Inarcare la zona lombare", "f": "Addominali contratti, schiena sempre sullo schienale." },
+      { "t": "Sedile troppo alto", "f": "Se parti con le mani sopra la testa perdi metà del movimento." },
+      { "t": "Piastre che sbattono", "f": "Discesa troppo veloce o carico troppo alto." }
+    ],
+    "joint": { "label": "Fastidio alla spalla", "tips": [
+      "Abbassa il sedile di una tacca.",
+      "Usa l'impugnatura neutra se c'è.",
+      "Non scendere oltre le orecchie e riduci il carico."
+    ] },
+    "cue": [ "Drop set: finita la terza serie sposta il perno del 20% e continua.", "Discesa in 2–3″." ],
+    "alt": [ "Lento avanti con manubri da seduto, panca a 80–90°.", "Shoulder press al multipower." ]
+  },
+  "alzate-lat-front": {
+    "muscles": "Deltoidi laterali e anteriori",
+    "setup": [
+      "In piedi, manubri leggeri lungo i fianchi.",
+      "Un'alzata laterale, poi un'alzata frontale = 1 ripetizione.",
+      "Fermati sempre all'altezza delle spalle."
+    ],
+    "errors": [
+      { "t": "Peso troppo alto", "f": "Usa manubri leggeri: sono 24–30 alzate per serie." },
+      { "t": "Dondolare", "f": "Busto fermo, ginocchia morbide." },
+      { "t": "Alzare oltre le spalle", "f": "Fermati all'altezza delle spalle." }
+    ],
+    "joint": { "label": "Fastidio alla spalla", "tips": [
+      "Frontale con presa neutra (pollici in alto).",
+      "Riduci l'altezza delle alzate.",
+      "Usa manubri più leggeri."
+    ] },
+    "cue": [ "Guarda il video del coach.", "Ritmo costante, niente slanci." ],
+    "alt": [ "Alzate laterali + frontali al cavo basso.", "Disco tenuto con due mani per le frontali." ]
+  },
+  "bicipiti-manubri-80": {
+    "muscles": "Bicipiti",
+    "setup": [
+      "Panca regolata a circa 80°, schiena appoggiata.",
+      "Manubri lungo i fianchi, palmi in avanti.",
+      "Sali senza staccare la schiena, gomiti fermi."
+    ],
+    "errors": [
+      { "t": "Staccare la schiena", "f": "Resta appoggiato: altrimenti stai slanciando." },
+      { "t": "Gomiti che vanno avanti", "f": "Restano sotto le spalle." },
+      { "t": "Discesa veloce", "f": "Scendi in 2–3″ fino a braccia quasi distese." }
+    ],
+    "joint": { "label": "Fastidio a polsi o gomiti", "tips": [
+      "Presa a martello sulle serie che danno fastidio.",
+      "Riduci il carico.",
+      "Non bloccare i gomiti in basso."
+    ] },
+    "cue": [ "Ruota i palmi verso l'alto salendo (supinazione).", "Back-off: −15/20% e a cedimento." ],
+    "alt": [ "Curl al cavo basso.", "Curl con bilanciere EZ." ]
+  },
+  "plank-swissball": {
+    "muscles": "Addominali, core",
+    "setup": [
+      "Mani sulla swissball, braccia distese sotto le spalle.",
+      "Piedi a terra, corpo dritto dalla testa ai talloni.",
+      "Addominali e glutei contratti."
+    ],
+    "errors": [
+      { "t": "Bacino che cade", "f": "Glutei stretti, pensa a portare l'ombelico verso la colonna." },
+      { "t": "Sedere troppo alto", "f": "Corpo in linea retta." },
+      { "t": "Trattenere il respiro", "f": "Respira corto ma continuo." }
+    ],
+    "joint": { "label": "Fastidio a lombare o spalle", "tips": [
+      "Allarga i piedi per più stabilità.",
+      "Appoggia gli avambracci sulla palla invece delle mani.",
+      "Fermati quando la posizione si rompe: conta il tempo pulito."
+    ] },
+    "cue": [ "Usa il cronometro e registra i secondi.", "Stringi i glutei per tutta la durata." ],
+    "alt": [ "Plank sugli avambracci a terra.", "Plank con mani su panca." ]
+  }
+}

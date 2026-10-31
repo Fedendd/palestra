@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "aggiornata": "2026-10-30",
+  "warmup": [
+    { "badge": "8′", "text": "Tapis roulant a velocità progressiva: aumenta ogni 2′, da camminata a corsa sostenuta." },
+    { "badge": "3×", "text": "Mobilità a circuito: 30″ per esercizio, 3 giri NO STOP.", "video": "https://youtu.be/tIZkHIqQFMw?si=2VceC1wU3rq5RJ4A" }
+  ],
+  "methods": {
+    "backoff": { "label": "Back-off", "text": "3 serie da 6 BELLE CARICHE ma no cedimento, poi riduci il carico del 15-20% e fai 2 serie da 12-15 a CEDIMENTO." },
+    "backoff8": { "label": "Back-off", "text": "2 serie da 8 BELLE CARICHE ma no cedimento, poi riduci il carico del 15-20% e fai 2 serie da 12-15 a CEDIMENTO." },
+    "drop": { "label": "Drop set", "text": "Esegui le 12-15 rip quasi a cedimento, al termine riduci il carico del 20% ed esegui max rip." },
+    "totali": { "label": "Totali", "text": "Esegui tot ripetizioni dividendole COME vuoi, purché arrivi al totale nel minor tempo possibile. Utilizza un carico che solitamente ti permette di fare 10-12 ripetizioni consecutive a cedimento." },
+    "superset": { "label": "Super set", "text": "Esegui i due esercizi uno dopo l'altro senza pausa, poi recupera." },
+    "max": { "label": "Max", "text": "Più ripetizioni (o più secondi) possibili mantenendo una tecnica pulita." },
+    "maxhalf": { "label": "Max", "text": "Esegui una serie massimale (ad esempio ne fai 8), poi esegui 3 serie da 4 con 2″ su ogni rip." },
+    "cariche": { "label": "Belle cariche", "text": "BELLE CARICHE, ma BELLE CARICHE." },
+    "crescente": { "label": "Carico crescente", "text": "Aumenta il carico ogni serie, cedimento ogni serie." },
+    "normale": { "label": "", "text": "Serie classiche: arriva vicino al cedimento mantenendo la tecnica." }
+  },
+  "days": [
+    {
+      "id": "push",
+      "num": 1,
+      "name": "Push",
+      "sub": "Quadricipiti · Petto · Spalle · Tricipiti",
+      "exercises": [
+        {
+          "id": "leg-extension", "name": "Leg extension", "equip": "Macchina Technogym", "unit": "kg", "step": 5,
+          "method": "crescente", "scheme": "2×12–15 · 60″",
+          "sets": [ { "k": "Serie", "r": "12–15", "rest": 60 }, { "k": "Serie +", "r": "12–15", "rest": 60 } ]
+        },
+        {
+          "id": "pressa-inclinata", "name": "Pressa inclinata", "equip": "Macchina Technogym", "unit": "kg", "step": 5,
+          "method": "backoff", "scheme": "3×6 · 90″ + 2×12–15 · 75″",
+          "sets": [
+            { "k": "Pesante", "r": "6", "rest": 90 }, { "k": "Pesante", "r": "6", "rest": 90 }, { "k": "Pesante", "r": "6", "rest": 90 },
+            { "k": "Back-off", "r": "12–15", "rest": 75, "auto": 0.82 }, { "k": "Back-off", "r": "12–15", "rest": 75 }
+          ]
+        },
+        {
+          "id": "squat-goblet", "name": "Squat goblet con kettlebell al petto", "equip": "Technogym · kettlebell", "unit": "kg", "step": 2,
+          "method": "totali", "scheme": "50 ripetizioni totali", "total": 50
+        },
+        {
+          "id": "chest-press", "name": "Chest press", "equip": "Macchina Technogym", "unit": "kg", "step": 5,
+          "method": "normale", "scheme": "2×12–15 · 75″",
+          "sets": [ { "k": "Serie", "r": "12–15", "rest": 75 }, { "k": "Serie", "r": "12–15", "rest": 75 } ]
+        },
+        {
+          "id": "panca-manubri", "name": "Panca piana manubri", "equip": "Technogym · manubri e panca", "unit": "kg", "step": 2,
+          "method": "backoff", "scheme": "3×6 · 90″ + 2×12–15 · 75″",
+          "sets": [
+            { "k": "Pesante", "r": "6", "rest": 90 }, { "k": "Pesante", "r": "6", "rest": 90 }, { "k": "Pesante", "r": "6", "rest": 90 },
+            { "k": "Back-off", "r": "12–15", "rest": 75, "auto": 0.82 }, { "k": "Back-off", "r": "12–15", "rest": 75 }
+          ]
+        },
+        {
+          "id": "spinte-manubri", "name": "Spinte sopra la testa con 2 manubri", "equip": "Technogym · manubri", "unit": "kg", "step": 2,
+          "method": "totali", "scheme": "50 ripetizioni totali", "total": 50
+        },
+        {
+          "id": "alzate-laterali", "name": "Alzate laterali", "equip": "Technogym · manubri", "unit": "kg", "step": 1,
+          "method": "drop", "scheme": "3×12–15, ultima in drop set",
+          "sets": [
+            { "k": "Serie", "r": "12–15", "rest": 75 }, { "k": "Serie", "r": "12–15", "rest": 75 }, { "k": "Serie", "r": "12–15", "rest": 0 },
+            { "k": "Drop −20%", "r": "max", "rest": 75, "auto": 0.8 }
+          ]
+        },
+        {
+          "id": "tricipiti-corda", "name": "Tricipiti con corda alla colonnina", "equip": "Technogym · cavo", "unit": "kg", "step": 2.5,
+          "method": "drop", "scheme": "3×12–15, ultima in drop set",
+          "sets": [
+            { "k": "Serie", "r": "12–15", "rest": 75 }, { "k": "Serie", "r": "12–15", "rest": 75 }, { "k": "Serie", "r": "12–15", "rest": 0 },
+            { "k": "Drop −20%", "r": "max", "rest": 75, "auto": 0.8 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pull",
+      "num": 2,
+      "name": "Pull",
+      "sub": "Dorso · Femorali · Bicipiti",
+      "exercises": [
+        {
+          "id": "trazioni-australian", "name": "Trazioni australian agli anelli", "equip": "Technogym · anelli", "unit": "rip",
+          "method": "max", "scheme": "2×MAX · 2″ su ogni rip", "video": "https://youtube.com/shorts/Cpn2P7vn2vs?si=zcs0sDGH-RwtJenU",
+          "sets": [ { "k": "Max", "r": "max", "rest": 90 }, { "k": "Max", "r": "max", "rest": 90 } ]
+        },
+        {
+          "id": "lat-machine", "name": "Lat machine presa prona avanti", "equip": "Macchina Technogym", "unit": "kg", "step": 5,
+          "method": "backoff", "scheme": "3×6 · 90″ + 2×12–15 · 75″",
+          "sets": [
+            { "k": "Pesante", "r": "6", "rest": 90 }, { "k": "Pesante", "r": "6", "rest": 90 }, { "k": "Pesante", "r": "6", "rest": 90 },
+            { "k": "Back-off", "r": "12–15", "rest": 75, "auto": 0.82 }, { "k": "Back-off", "r": "12–15", "rest": 75 }
+          ]
+        },
+        {
+          "id": "row-machine", "name": "Row machine dorso", "equip": "Macchina Technogym", "unit": "kg", "step": 5,
+          "method": "drop", "scheme": "3×12–15, ultima in drop set",
+          "sets": [
+            { "k": "Serie", "r": "12–15", "rest": 75 }, { "k": "Serie", "r": "12–15", "rest": 75 }, { "k": "Serie", "r": "12–15", "rest": 0 },
+            { "k": "Drop −20%", "r": "max", "rest": 75, "auto": 0.8 }
+          ]
+        },
+        {
+          "id": "aperture-y-trx", "name": "Aperture a Y al TRX", "equip": "Technogym · TRX", "unit": "rip",
+          "method": "normale", "scheme": "2×15–18 · 60″", "video": "https://youtube.com/shorts/nhsWLgX1q88?si=6HxB8Ur34yriC-s6",
+          "sets": [ { "k": "Serie", "r": "15–18", "rest": 60 }, { "k": "Serie", "r": "15–18", "rest": 60 } ]
+        },
+        {
+          "id": "superset-legcurl-stacchi", "name": "Leg curl + Stacchi rumeni con 2 manubri", "equip": "Macchina Technogym + manubri", "unit": "kg", "step": 2.5,
+          "method": "superset", "scheme": "4 giri: 12–15 leg curl + 8–10 stacchi",
+          "sets": [
+            { "k": "Leg curl", "r": "12–15", "rest": 0 }, { "k": "Stacchi", "r": "8–10", "rest": 75 },
+            { "k": "Leg curl", "r": "12–15", "rest": 0 }, { "k": "Stacchi", "r": "8–10", "rest": 75 },
+            { "k": "Leg curl", "r": "12–15", "rest": 0 }, { "k": "Stacchi", "r": "8–10", "rest": 75 },
+            { "k": "Leg curl", "r": "12–15", "rest": 0 }, { "k": "Stacchi", "r": "8–10", "rest": 75 }
+          ]
+        },
+        {
+          "id": "bicipiti-ez", "name": "Bicipiti con bilanciere EZ", "equip": "Technogym · bilanciere EZ", "unit": "kg", "step": 2.5,
+          "method": "backoff8", "scheme": "2×8 · 90″ + 2×12–15 · 75″",
+          "sets": [
+            { "k": "Pesante", "r": "8", "rest": 90 }, { "k": "Pesante", "r": "8", "rest": 90 },
+            { "k": "Back-off", "r": "12–15", "rest": 75, "auto": 0.82 }, { "k": "Back-off", "r": "12–15", "rest": 75 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "full",
+      "num": 3,
+      "name": "Fullbody",
+      "sub": "Tutto il corpo",
+      "exercises": [
+        {
+          "id": "pressa-inclinata", "name": "Pressa inclinata", "equip": "Macchina Technogym", "unit": "kg", "step": 5,
+          "method": "backoff", "scheme": "3×6 · 90″ + 2×12–15 · 75″",
+          "sets": [
+            { "k": "Pesante", "r": "6", "rest": 90 }, { "k": "Pesante", "r": "6", "rest": 90 }, { "k": "Pesante", "r": "6", "rest": 90 },
+            { "k": "Back-off", "r": "12–15", "rest": 75, "auto": 0.82 }, { "k": "Back-off", "r": "12–15", "rest": 75 }
+          ]
+        },
+        {
+          "id": "affondi", "name": "Affondi in camminata", "equip": "Technogym · manubri", "unit": "kg", "step": 2,
+          "method": "totali", "scheme": "60 ripetizioni totali", "total": 60
+        },
+        {
+          "id": "trazioni-assistite", "name": "Trazioni supine assistite con molla", "equip": "Technogym · sbarra + elastico", "unit": "rip",
+          "method": "maxhalf", "scheme": "1×MAX + 3×MAX/2 · 2″ su ogni rip",
+          "sets": [ { "k": "Max", "r": "max", "rest": 90 }, { "k": "Metà max", "r": "max/2", "rest": 90 }, { "k": "Metà max", "r": "max/2", "rest": 90 }, { "k": "Metà max", "r": "max/2", "rest": 90 } ]
+        },
+        {
+          "id": "rematore-manubrio", "name": "Rematore manubrio singolo, mano su panca", "equip": "Technogym · manubrio e panca", "unit": "kg", "step": 2,
+          "method": "cariche", "scheme": "3×6 per lato",
+          "sets": [ { "k": "Per lato", "r": "6", "rest": 90 }, { "k": "Per lato", "r": "6", "rest": 90 }, { "k": "Per lato", "r": "6", "rest": 90 } ]
+        },
+        {
+          "id": "shoulder-press", "name": "Shoulder press", "equip": "Macchina Technogym", "unit": "kg", "step": 5,
+          "method": "drop", "scheme": "3×12–15, ultima in drop set",
+          "sets": [
+            { "k": "Serie", "r": "12–15", "rest": 75 }, { "k": "Serie", "r": "12–15", "rest": 75 }, { "k": "Serie", "r": "12–15", "rest": 0 },
+            { "k": "Drop −20%", "r": "max", "rest": 75, "auto": 0.8 }
+          ]
+        },
+        {
+          "id": "alzate-lat-front", "name": "Alzate laterali + frontali", "equip": "Technogym · manubri", "unit": "kg", "step": 1,
+          "method": "normale", "scheme": "2×12–15 (1 laterale + 1 frontale = 1 rip)", "note": "1 alzata laterale e 1 alzata frontale = 1 rip.",
+          "video": "https://youtube.com/shorts/P1XsY_UohDs?si=HQIc4QXH3DMGgi_6",
+          "sets": [ { "k": "Serie", "r": "12–15", "rest": 60 }, { "k": "Serie", "r": "12–15", "rest": 60 } ]
+        },
+        {
+          "id": "bicipiti-manubri-80", "name": "Bicipiti manubri seduto su panca 80°", "equip": "Technogym · manubri e panca", "unit": "kg", "step": 2,
+          "method": "backoff8", "scheme": "2×8 · 90″ + 2×12–15 · 75″",
+          "sets": [
+            { "k": "Pesante", "r": "8", "rest": 90 }, { "k": "Pesante", "r": "8", "rest": 90 },
+            { "k": "Back-off", "r": "12–15", "rest": 75, "auto": 0.82 }, { "k": "Back-off", "r": "12–15", "rest": 75 }
+          ]
+        },
+        {
+          "id": "plank-swissball", "name": "Plank mani su swissball", "equip": "Technogym · swissball", "unit": "sec",
+          "method": "max", "scheme": "3×MAX (tempo)",
+          "sets": [ { "k": "Max", "r": "max", "rest": 60 }, { "k": "Max", "r": "max", "rest": 60 }, { "k": "Max", "r": "max", "rest": 60 } ]
+        }
+      ]
+    }
+  ]
+}

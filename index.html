@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Scheda Palestra</title>
+  <meta name="theme-color" content="#0F1115">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Palestra">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app" aria-live="polite"><p class="loading">Caricamento…</p></main>
+
+  <div id="restbar" class="restbar" hidden>
+    <div class="restbar-info">
+      <span class="restbar-label" id="rest-label">Recupero</span>
+      <span class="restbar-time" id="rest-time">0:00</span>
+    </div>
+    <div class="restbar-actions">
+      <button type="button" class="btn-small" data-act="rest-add">+15″</button>
+      <button type="button" class="btn-small" data-act="rest-skip">Salta</button>
+    </div>
+  </div>
+
+  <nav id="tabbar" class="tabbar" aria-label="Navigazione principale">
+    <a href="#/oggi" data-tab="oggi">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6.5 6.5v11M17.5 6.5v11M3.5 9v6M20.5 9v6M6.5 12h11"/></svg>
+      Scheda
+    </a>
+    <a href="#/storico" data-tab="storico">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 15v-3M12 15V7M17 15v-5"/></svg>
+      Storico
+    </a>
+    <a href="#/aiuto" data-tab="aiuto">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6M12 17h.01"/></svg>
+      Aiuto
+    </a>
+  </nav>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+
+  <script src="app.js"></script>
+</body>
+</html>
