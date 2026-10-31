@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 170" role="img" aria-label="Rotazione anche: seduto con ginocchia piegate, le ginocchia cadono da un lato e poi dall'altro">
+  <rect width="340" height="170" rx="18" fill="#15181D"/>
+  <g stroke="#2A2E36" stroke-width="2"><line x1="12" y1="150" x2="158" y2="150"/><line x1="182" y1="150" x2="328" y2="150"/></g>
+  <!-- Partenza: seduto, mani a terra dietro, ginocchia in alto -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#6B717B" stroke-width="5">
+      <polyline points="78,92 66,112 62,134"/>
+      <polyline points="92,92 104,112 108,134"/>
+    </g>
+    <g stroke="#C9CDD3" stroke-width="7">
+      <line x1="85" y1="136" x2="85" y2="90"/>
+      <polyline points="80,140 52,100 40,148"/>
+      <polyline points="90,140 118,100 130,148"/>
+    </g>
+  </g>
+  <circle cx="85" cy="76" r="10" fill="#C9CDD3"/>
+  <!-- Freccia -->
+  <g fill="none" stroke="#C6F432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="154" y1="64" x2="184" y2="64"/><polyline points="176,56 184,64 176,72"/>
+  </g>
+  <!-- Arrivo: entrambe le ginocchia cadono a destra -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#6B717B" stroke-width="5">
+      <polyline points="248,92 236,112 232,134"/>
+      <polyline points="262,92 274,112 278,134"/>
+    </g>
+    <line x1="255" y1="136" x2="255" y2="90" stroke="#C9CDD3" stroke-width="7"/>
+    <g stroke="#C6F432" stroke-width="7">
+      <polyline points="250,140 288,128 276,148"/>
+      <polyline points="260,140 312,134 318,148"/>
+    </g>
+  </g>
+  <circle cx="255" cy="76" r="10" fill="#C9CDD3"/>
+  <path d="M226 108 Q 268 84 306 116" fill="none" stroke="#C6F432" stroke-width="2.5" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <polyline points="297,111 306,116 300,124" fill="none" stroke="#C6F432" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="85" y="166" fill="#9AA0A8" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">1 · seduto, ginocchia su</text>
+  <text x="255" y="166" fill="#9AA0A8" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">2 · ginocchia giù di lato</text>
+</svg>

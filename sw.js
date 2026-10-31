@@ -1,9 +1,10 @@
 // Cambia VERSION quando aggiorni i file (es. una nuova scheda) per forzare l'aggiornamento sul telefono.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = 'palestra-' + VERSION;
 const SHELL = [
   './', 'index.html', 'styles.css', 'app.js', 'scheda.json', 'aiuto.json', 'manifest.webmanifest',
-  'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'
+  'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png',
+  'img/mob-toe-touch.svg', 'img/mob-wgs.svg', 'img/mob-anche.svg'
 ];
 
 self.addEventListener('install', (e) => {

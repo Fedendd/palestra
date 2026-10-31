@@ -202,6 +202,7 @@ function viewOggi() {
         <span class="num" style="flex:none;width:40px;font-size:22px;color:var(--accent)">${esc(w.badge)}</span>
         <div class="stack" style="gap:4px">
           <span style="font-size:14px;line-height:1.45;color:#E2E5E9">${esc(w.text)}</span>
+          ${w.mobility ? `<a href="#/mobilita" class="btn-secondary" style="min-height:44px;margin-top:4px">Come si fanno + timer</a>` : ''}
           ${w.video ? `<a href="${esc(w.video)}" target="_blank" rel="noopener" style="font-size:14px;font-weight:600">Guarda il video →</a>` : ''}
         </div>
       </div>`).join('')}
@@ -222,6 +223,77 @@ function viewOggi() {
       }).join('')}
     </section>
     <button type="button" class="btn-primary" data-act="start" data-day="${dayId}">${ICON.play}${cur ? 'Riprendi allenamento' : 'Inizia allenamento'}</button>
+  </div>`;
+}
+
+/* ---------- Schermata: mobilità ---------- */
+
+function circState() {
+  const M = SCHEDA.mobility;
+  const c = UI.circ;
+  const n = M.exercises.length;
+  const total = M.work * n * M.rounds;
+  if (!c) return { started: false, total };
+  const el = c.acc + (c.running ? Date.now() - c.start : 0);
+  const sec = el / 1000;
+  if (sec >= total) return { started: true, finished: true, total };
+  const idx = Math.floor(sec / M.work);
+  return { started: true, running: c.running, idx, ex: idx % n, round: Math.floor(idx / n) + 1, left: M.work - (sec % M.work), total };
+}
+
+function viewMobilita() {
+  const M = SCHEDA.mobility;
+  const st = circState();
+  const video = (SCHEDA.warmup.find((w) => w.mobility) || {}).video;
+  let timer;
+  if (!st.started) {
+    timer = `<section class="card" style="align-items:center;text-align:center">
+      <span class="num" style="font-size:56px">${mmss(st.total)}</span>
+      <span class="small">${M.exercises.length} esercizi × ${M.work}″ × ${M.rounds} giri, senza pause. Suona a ogni cambio.</span>
+      <button type="button" class="btn-primary" data-act="circ-start">${ICON.play}Avvia circuito</button>
+    </section>`;
+  } else if (st.finished) {
+    timer = `<section class="card" style="align-items:center;text-align:center">
+      <span class="num" style="font-size:40px;color:var(--accent)">Circuito completato</span>
+      <span class="small">Ora puoi passare agli esercizi della scheda.</span>
+      <a href="#/oggi" class="btn-primary">Vai alla scheda</a>
+      <button type="button" class="link" data-act="circ-reset">Ricomincia</button>
+    </section>`;
+  } else {
+    const cur = M.exercises[st.ex];
+    const next = M.exercises[(st.ex + 1) % M.exercises.length];
+    const isLast = st.idx === M.exercises.length * M.rounds - 1;
+    timer = `<section class="card" style="align-items:center;text-align:center;border:2px solid var(--accent)">
+      <span class="eyebrow">Giro ${st.round} di ${M.rounds} · esercizio ${st.ex + 1} di ${M.exercises.length}</span>
+      <span style="font-size:20px;font-weight:700">${esc(cur.name)}</span>
+      <span class="num" id="circ-time" style="font-size:72px;color:var(--accent)">${Math.ceil(st.left)}</span>
+      <img src="${esc(cur.img)}" alt="" style="width:100%;max-width:340px;border-radius:14px">
+      <span class="small">${isLast ? 'Ultimo esercizio!' : 'Poi: ' + esc(next.name)}</span>
+      <div class="grid2" style="width:100%">
+        <button type="button" class="btn-secondary" data-act="circ-pause">${st.running ? 'Pausa' : 'Riprendi'}</button>
+        <button type="button" class="btn-secondary" data-act="circ-reset">Ricomincia</button>
+      </div>
+    </section>`;
+  }
+
+  return `<div class="screen">
+    <header class="row">
+      <a class="icon-btn" href="#/oggi" aria-label="Torna alla scheda">${ICON.back}</a>
+      <div class="head" style="gap:2px">
+        <h1 class="h1 sm">Mobilità</h1>
+        <span class="small">Riscaldamento · ${M.work}″ per esercizio × ${M.rounds} giri NO STOP</span>
+      </div>
+    </header>
+    ${timer}
+    <section class="stack">
+      <h2 class="h2">Gli esercizi</h2>
+      ${M.exercises.map((e, n) => `<article class="card" ${st.started && !st.finished && st.ex === n ? 'style="border:1px solid var(--accent)"' : ''}>
+        <div class="row"><span class="num" style="font-size:26px;color:var(--accent);width:24px">${n + 1}</span><span style="font-size:17px;font-weight:700">${esc(e.name)}</span></div>
+        <img src="${esc(e.img)}" alt="" style="width:100%;border-radius:14px">
+        <ol class="steps" style="gap:6px">${e.steps.map((s, k) => `<li style="padding:10px 12px;background:#15181D"><span class="n">${k + 1}</span><span style="font-size:14px">${esc(s)}</span></li>`).join('')}</ol>
+      </article>`).join('')}
+    </section>
+    ${video ? `<a class="help-link" href="${esc(video)}" target="_blank" rel="noopener">${ICON.video}<span>Video originale del coach</span>${ICON.chev}</a>` : ''}
   </div>`;
 }
 
@@ -601,6 +673,7 @@ function route() {
   let html;
   let tab = page;
   if (page === 'allena') html = viewAllena();
+  else if (page === 'mobilita') { html = viewMobilita(); tab = 'oggi'; }
   else if (page === 'storico') html = viewStorico();
   else if (page === 'aiuto') html = arg ? viewAiuto(decodeURIComponent(arg)) : viewAiutoList();
   else { html = viewOggi(); tab = 'oggi'; }
@@ -712,6 +785,13 @@ const A = {
     save(); rerender();
   },
   'finish'() { finishSession(); },
+  'circ-start'() { UI.circ = { start: Date.now(), acc: 0, running: true, lastIdx: 0 }; requestWakeLock(); beep(); rerender(); },
+  'circ-pause'() {
+    const c = UI.circ; if (!c) return;
+    if (c.running) { c.acc += Date.now() - c.start; c.running = false; } else { c.start = Date.now(); c.running = true; }
+    rerender();
+  },
+  'circ-reset'() { UI.circ = null; rerender(); },
   'rest-add'() { if (D.current && D.current.rest) { D.current.rest.end = Math.max(D.current.rest.end, Date.now()) + 15000; D.current.rest.fired = false; save(); tickRest(); } },
   'rest-skip'() { if (D.current) { D.current.rest = null; save(); tickRest(); } },
   'del-session'(d) {
@@ -785,6 +865,19 @@ setInterval(() => {
   }
   const sw = document.getElementById('sw');
   if (sw && UI.sw) sw.textContent = mmss((Date.now() - UI.sw) / 1000);
+  if (UI.circ && UI.circ.running) {
+    const st = circState();
+    const idx = st.finished ? Infinity : st.idx;
+    if (idx !== UI.circ.lastIdx) {
+      UI.circ.lastIdx = idx;
+      beep(); if (navigator.vibrate) navigator.vibrate(200);
+      if (st.finished) UI.circ.running = false;
+      if (location.hash === '#/mobilita') rerender();
+    } else {
+      const t = document.getElementById('circ-time');
+      if (t) t.textContent = Math.ceil(st.left);
+    }
+  }
 }, 250);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) { tickRest(); if (D.current && location.hash === '#/allena') requestWakeLock(); } });
 

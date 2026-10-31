@@ -3,8 +3,41 @@
   "aggiornata": "2026-10-30",
   "warmup": [
     { "badge": "8′", "text": "Tapis roulant a velocità progressiva: aumenta ogni 2′, da camminata a corsa sostenuta." },
-    { "badge": "3×", "text": "Mobilità a circuito: 30″ per esercizio, 3 giri NO STOP.", "video": "https://youtu.be/tIZkHIqQFMw?si=2VceC1wU3rq5RJ4A" }
+    { "badge": "3×", "text": "Mobilità a circuito: 30″ per esercizio, 3 giri NO STOP.", "video": "https://youtu.be/tIZkHIqQFMw?si=2VceC1wU3rq5RJ4A", "mobility": true }
   ],
+  "mobility": {
+    "work": 30,
+    "rounds": 3,
+    "exercises": [
+      {
+        "name": "Controlateral toe touch",
+        "img": "img/mob-toe-touch.svg",
+        "steps": [
+          "In piedi, piedi alla larghezza delle anche, braccia tese in alto.",
+          "Piegati in avanti e tocca il piede sinistro con la mano destra; l'altro braccio va indietro e in alto.",
+          "Torna su con le braccia in alto e ripeti dall'altro lato. Alterna per 30″."
+        ]
+      },
+      {
+        "name": "World's greatest stretch",
+        "img": "img/mob-wgs.svg",
+        "steps": [
+          "Da in piedi fai un affondo lungo in avanti e appoggia le mani a terra, all'interno del piede avanti.",
+          "Ruota il busto e porta il braccio dal lato della gamba avanti verso il soffitto, seguendolo con lo sguardo.",
+          "Riporta la mano a terra, torna in piedi e cambia gamba. Alterna per 30″."
+        ]
+      },
+      {
+        "name": "Rotazione anche",
+        "img": "img/mob-anche.svg",
+        "steps": [
+          "Seduto a terra, mani appoggiate dietro, ginocchia piegate e piedi più larghi delle anche.",
+          "Lascia cadere entrambe le ginocchia da un lato, verso terra, tenendo il busto dritto.",
+          "Riporta le ginocchia al centro e falle cadere dall'altro lato. Alterna per 30″."
+        ]
+      }
+    ]
+  },
   "methods": {
     "backoff": { "label": "Back-off", "text": "3 serie da 6 BELLE CARICHE ma no cedimento, poi riduci il carico del 15-20% e fai 2 serie da 12-15 a CEDIMENTO." },
     "backoff8": { "label": "Back-off", "text": "2 serie da 8 BELLE CARICHE ma no cedimento, poi riduci il carico del 15-20% e fai 2 serie da 12-15 a CEDIMENTO." },

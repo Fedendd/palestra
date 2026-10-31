@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 170" role="img" aria-label="Controlateral toe touch: da in piedi con braccia in alto a mano che tocca il piede opposto">
+  <rect width="340" height="170" rx="18" fill="#15181D"/>
+  <g stroke="#2A2E36" stroke-width="2"><line x1="16" y1="150" x2="154" y2="150"/><line x1="186" y1="150" x2="324" y2="150"/></g>
+  <!-- Partenza: in piedi, braccia in alto -->
+  <g fill="none" stroke="#C9CDD3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="85" y1="52" x2="85" y2="96"/>
+    <polyline points="85,96 75,148"/>
+    <polyline points="85,96 95,148"/>
+    <polyline points="85,56 74,30 70,10"/>
+    <polyline points="85,56 96,30 100,10"/>
+  </g>
+  <circle cx="85" cy="40" r="10" fill="#C9CDD3"/>
+  <!-- Freccia -->
+  <g fill="none" stroke="#C6F432" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="152" y1="80" x2="186" y2="80"/><polyline points="178,72 186,80 178,88"/>
+  </g>
+  <!-- Arrivo: piegato, mano destra al piede sinistro -->
+  <g fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#C9CDD3">
+      <polyline points="262,96 244,148"/>
+      <polyline points="262,96 280,148"/>
+      <line x1="262" y1="96" x2="246" y2="112"/>
+      <polyline points="250,108 272,92 290,74"/>
+    </g>
+    <polyline points="250,108 248,128 246,146" stroke="#C6F432"/>
+  </g>
+  <circle cx="238" cy="120" r="10" fill="#C9CDD3"/>
+  <circle cx="246" cy="146" r="6" fill="none" stroke="#C6F432" stroke-width="2.5"/>
+  <text x="85" y="166" fill="#9AA0A8" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">1 · braccia in alto</text>
+  <text x="255" y="166" fill="#9AA0A8" font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">2 · mano al piede opposto</text>
+</svg>
